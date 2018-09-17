@@ -4,5 +4,5 @@ Problem Statement: The skLearn package in Python does not support stepwise selec
                    
 Dataset: Used the 'compustat_annual_2000_2017_with link information' as the dataset.
 
-Code: 'StepwiseR'function runs skLearn linear_model iteratively, and at each iteration goes through stepwise process to choose the   variables.Used a level of significance of 0.05 for critical value. Finally used the linear regression to predict operational profit. 
+Code: 'StepwiseR' function runs skLearn linear_model iteratively, and at each iteration goes through stepwise process to choose the   variables.Used a level of significance of 0.05 for critical value. Finally used the linear regression to predict operational profit. 
        
