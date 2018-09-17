@@ -47,11 +47,12 @@ X2 = X
 linM.fit(X2,Y)
 
 X2.head()
+#Significance value 
 C_val = 0.05
 d={}
 popped_cols = []
 
-
+# Function for stepwise selection of significant variables
 def stepwiseR(X,Y): 
     c_val = 0.05
     X=sm.add_constant(X,has_constant='add')
@@ -134,8 +135,8 @@ X = X2[list(d.keys())]
 # Splitting the dataset into the Training set and Test set
 X=sm.add_constant(X)
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size = 0.2, random_state = 0)
-
-linM.fit(X_train, Y_train)         #fit regressor to training set
+#fit regressor to training set
+linM.fit(X_train, Y_train)         
 
 # Predicting the Test set results
 y_pred = linM.predict(X_test)
